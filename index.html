@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NINTENDO-BOOTSTRAP</title>
+
+    <link rel="stylesheet" href="./archivos/css/bootstrap.css" >
+    <link rel="stylesheet" href="./archivos/css/main.css" >
+    
+</head>
+<body>
+
+<!-- EJEMPLO PRUEBA DISTRIBUCION COLUMNAS/FILAS -->
+
+    <!-- <div class="container bg-primary">
+       <div class="row">
+        <div class="col-sm">
+            1
+        </div>
+        <div class="col bg-danger">
+            2
+        </div>
+       </div>
+       <div class="row">
+        <div class="col">
+            1
+        </div>
+        <div class="col">
+            2
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-8">
+            1
+        </div>
+        <div class="col bg-danger">
+            2
+        </div>
+       </div>
+    </div>
+
+     -->
+
+
+
+<!-- NAVBAR -->
+
+     <nav class="navbar navbar-expand-sm navbar-dark bg-danger" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="archivos/img/logo.jpg" alt="" width="200">
+            </a>
+
+            <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto"> <!--ml-auto es margin: left-->
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Summer Pack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+<!-- CARRUSEL -->
+
+     <div class="carousel" id="mainSlider" data-ride="carousel" data-interval="2000">  <!--data-interval marca el tiempo en ms-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- d-block hace referencia a display: block; y w-100 significa width al 100% -->
+                <img class="d-block w-100" src="archivos/img/slide01.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="archivos/img/slide02.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="archivos/img/slide03.jpg" alt="">
+            </div>
+        </div>
+     </div>
+
+
+<!-- RIBBON -->
+
+     <div id="ribbon" class="container-fluid">
+        <div id="birthday" class="container w-50 px-5 rounded-lg">
+            <div class="row align-items-center">
+                <div class="col-sm p-3">
+                    <img class="w-75 mx-auto d-block" src="archivos/img/image01.png" alt="">
+                </div>
+
+                <div class="col-sm p-3 text-light text-center">
+                    <p class="text-warning h3">Today Is</p>
+                    <h4 class="text-shadow">Benjamin¨s Birthday</h4>                  
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+<!-- SEPARADOR ROBBON -->
+
+     <div id="separator-ribbon">
+        <div class="content bg-warning"></div>
+     </div>
+
+
+<!-- GAMES -->
+
+    <div id="games">
+        <div class="container-md p-5">
+
+            <div class="row pt-5">
+                <h3 class="text-center pb-5 pt-5 h1">Juegos de Animal Crossing</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="archivos/img/card01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tarjeta 1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="archivos/img/card02.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tarjeta 2</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="col-sm">
+                    <div class="card w-100 card-border mb-5">
+                        <img src="archivos/img/card03.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tarjeta 3</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>   
+            
+            </div>
+
+            <div class="row py-5">
+                <div class="col"> 
+                    <h3 class="text-center" style="color: var(--bs-blue);">More Games on Nintendo.com</h3> 
+                    <!-- Esa parte del color revisar en la pagina de bootstrap la parte de cutomie y despues css variables -->
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-2">
+                     <a href="#">Nintendo Switch</a>
+                </div>  
+                <div class="col-2">  
+                     <a href="#">Nintendo 3Ds</a>
+                </div>
+                <div class="col-1">   
+                     <a href="#">Wii U</a>
+                </div>     
+                <div class="col-1"> 
+                     <a href="#">Mobile</a>
+                </div>
+                <div class="col-1"> 
+                     <a href="#">Retro</a>
+                </div>
+            </div>    
+            
+        </div>
+    </div>
+     
+<!-- SEPARADOR AMIIBOS -->
+
+    <div id="separator-amiibos">
+        <div class="content bg-success"></div>
+    </div>
+
+
+<!-- AMIIBOS -->
+
+    <div id="amiibos" class="px-5 pb-5 bg-success">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white text-shadow">Featured Amiibo Figures</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">  <!-- El row-cols-2 es para que cuando se reduzca la pantalla lo minimo es que salgan dos figuras juntas -->
+                <div class="col-sm">
+                    <img src="archivos/img/figure01.png" alt="" class="w-100 amiibo">
+                    <div class="text-center">
+                        <span class="amiibo-name h5 p-2">Chabelita</span>     
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <img src="archivos/img/figure02.png" alt="" class="w-100 amiibo">
+                    <div class="text-center">
+                        <span class="amiibo-name h5 p-2">Sr. Frog</span>     
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <img src="archivos/img/figure03.png" alt="" class="w-100 amiibo">
+                    <div class="text-center">
+                        <span class="amiibo-name h5 p-2">Felix</span>     
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <img src="archivos/img/figure04.png" alt="" class="w-100 amiibo">
+                    <div class="text-center">
+                        <span class="amiibo-name h5 p-2">Yoggie & BooBoo</span>     
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col text-center">
+                    <a href="#" class="link-dark">
+                        <button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bold">View Amiibo Catalogue</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="separator-amiibos-footer">
+
+            </div>
+
+        </div>
+    </div>
+
+<!-- PLAY NINTENDO -->
+
+    <div id="play">
+        <div class="container-sm p-5">
+                <h3 class="text-center h1">Chabelita y Amigos en Play Nintendo </h3>
+        
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-3 d-none d-md-block">
+                    <img src="archivos/img/isabelle.png" alt="" class="w-100">
+                </div>
+
+                <div class="col-9">
+
+                    <div class="row justify-content-md-center">
+
+                        <div class="col p-1">
+
+                            <!-- Esta estructura para hacer tarjetas horizontales viene de Bootstra/Cards/Horizontal -->
+
+                            <!-- CARD 1-->
+                            <div class="card card-border bg-primary text-white">
+                                <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="archivos/img/ph-01.jpg" class="w-100" alt="..." >
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card.</p>
+                                    </div> <!--CARD-BODY -->
+                                </div> <!--COL-->
+                                </div><!--ROW-->
+                            </div> <!-- CARD -->
+                            
+
+                        </div> <!-- COL -->
+
+
+                        <div class="col p-1">
+    
+                                <!-- CARD 2-->
+                                <div class="card card-border bg-warning text-white">
+                                    <div class="row g-0">
+
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <img src="archivos/img/ph-02.jpg" class="w-100" alt="..." >
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <!-- CARD -->    
+
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="row justify-content-md-center">
+
+                        <div class="col p-1">
+
+                            <!-- Esta estructura para hacer tarjetas horizontales viene de Bootstra/Cards/Horizontal -->
+
+                            <!-- CARD 3-->
+                            <div class="card card-border bg-danger text-white">
+                                <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="archivos/img/ph-03.jpg" class="w-100" alt="..." >
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card.</p>
+                                     </div> <!--CARD-BODY -->
+                                </div> <!--COL-->
+                                </div><!--ROW-->
+                            </div> <!-- CARD -->
+                            
+
+                        </div> <!-- COL -->
+
+
+                        <div class="col p-1">
+    
+                                <!-- CARD 4-->
+                                <div class="card card-border bg-success text-white">
+                                    <div class="row g-0">
+                                        
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <img src="archivos/img/ph-04.jpg" class="w-100" alt="..." >
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <!-- CARD -->    
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>    
+
+<!-- FOOTER -->
+
+    <div id="footer" class="p-5">
+        <div class="container w-50 pt-5" >
+
+            <div class="row row-cols-md-2 justify-content-md-center">
+                <div class="col text-center">
+                    <a href="#">
+                        <button class="btn btn-lg rounded-pill btn-warning  w-100  p-3 shadow-sm font-weight-bold">
+                            Costumer Support
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center py-5">
+                <div class="col text-center font-weight-light">
+                   <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Doloremque reprehenderit
+                   </p>
+                   <p>
+                     optio architecto nisi maiores accusantium,
+                      consequuntur alias at omnis tenetur nihil 
+                   </p>
+                   <p>  
+                      labore nostrum odio distinctio
+                     similique, cumque ratione eos saepe?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="archivos/js/popper.js"></script>
+    <script src="archivos/js/bootstrap.js"></script>
+</body>
+</html>
+
+<!-- crossorigin="anonymous"
+crossorigin="anonymous" -->
+
+
